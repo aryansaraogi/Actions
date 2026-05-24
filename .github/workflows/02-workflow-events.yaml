@@ -1,9 +1,9 @@
 name: 02 - Workflow Events
 on: 
-  push:
-  pull_request:
-  schedule:
-    - cron: '0 0 * * MON'
+ # push:
+ #pull_request:
+ #schedule:
+ #  - cron: '0 0 * * MON'
   workflow_dispatch: # Runs manually from the UI
 
 
