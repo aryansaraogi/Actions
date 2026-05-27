@@ -6,9 +6,14 @@ jobs:
         steps:
             - name: Checkout code
               uses: actions/checkout@v4
-            - name: Printing Floders
-              run: ls                
-           #install deps of our react app
+            - name: Set up Node.js
+              uses: actions/setup-node@v3
+              with:
+                node-version: '18'
+            - name: install dependencies
+              run: npm i 
+      
+                #install deps of our react app
            #excute automated tests
 
         
