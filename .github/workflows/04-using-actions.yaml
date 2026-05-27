@@ -12,6 +12,7 @@ jobs:
                 node-version: '18'
             - name: install dependencies
               run: npm i 
+              working-directory: 04-using-actions/my-app
       
                 #install deps of our react app
            #excute automated tests
