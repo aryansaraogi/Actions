@@ -1,0 +1,14 @@
+name: 05 - 2 - Event Filters and Activity Types
+on:
+    pull_request:
+        types:
+            - closed
+        branches: [main]
+
+        
+jobs:
+  echo:
+     runs-on: ubuntu-latest
+     steps:
+          - name: Echo the event name
+            run: echo "running whenever a pull request is opened or synchronized on the main branch"
